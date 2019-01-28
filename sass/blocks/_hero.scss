@@ -1,0 +1,42 @@
+.hero {
+  background: url('../img/bg/bg-hero.png') center center / cover no-repeat;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.hero__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0.7;
+}
+
+.hero__content-img {
+  position: relative;
+}
+
+.hero__burger-img {
+  position: relative;
+  &2 {
+    position: absolute;
+    top: -6rem;
+    left: 2rem;
+  }
+}
+
+.hero__content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 7rem;
+}
+
+.hero__content-desc {
+  font-size: 5.5rem;
+  font-family: $lifehack;
+  color: $white;
+}

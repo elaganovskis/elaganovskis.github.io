@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.2rem;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  &:first-child::before {
+    display: none;
+  }
+  &::before {
+    content: '';
+    margin: 0 1rem;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background: $white;
+    display: inline-block;
+  }
+}
+
+.menu__link {
+  color: $white;
+  font-family: $ubuntu;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.btn-header {
+  margin-left: 1.5rem;
+};

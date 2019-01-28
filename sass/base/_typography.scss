@@ -1,0 +1,10 @@
+@import '../fonts/fonts.css';
+
+.title {
+  font-size: 7.2rem;
+  font-family: $gagalin;
+  line-height: 1.1;
+  &-hero {
+    color: $orange;
+  }
+}
