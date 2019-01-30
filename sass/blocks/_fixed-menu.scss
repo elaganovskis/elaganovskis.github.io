@@ -1,0 +1,29 @@
+.fixed-menu {
+  position: fixed;
+  top: 9rem;
+  right: 5rem;
+}
+
+.fixed-menu__item {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  border: 1px transparent solid;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  &_active {
+    border: 1px $white solid;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background: $white;
+    transform: translate(-50%, -50%);
+  }
+}
