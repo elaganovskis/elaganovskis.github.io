@@ -4,7 +4,11 @@
   font-size: 7.2rem;
   font-family: $gagalin;
   line-height: 1.1;
+  margin-bottom: 5.7rem;
   &-hero {
     color: $orange;
+  }
+  &-best {
+    color: $black;
   }
 }

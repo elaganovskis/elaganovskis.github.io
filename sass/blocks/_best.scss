@@ -1,0 +1,55 @@
+.best {
+  background: url('../img/bg/bg-best.png') center center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.best__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.best__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.best__item {
+  width: 28rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 4rem;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.best__image {
+  margin-bottom: 3.3rem;
+  &_last {
+    margin-bottom: 4rem;
+  }
+}
+
+.best__desc-title {
+  font-family: $lifehack;
+  font-size: 2.4rem;
+  color: $black;
+  line-height: 1.167;
+  margin-bottom: 2.5rem;
+}
+
+.best__desc-content {
+  font-size: 1.4rem;
+  font-family: $ubuntu;
+  line-height: 1.7;
+  color: rgba(47, 50, 52, 0.8);
+}
