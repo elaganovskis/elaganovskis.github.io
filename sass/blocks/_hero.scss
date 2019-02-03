@@ -13,7 +13,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 5rem;
   flex: 0.7;
 }
 
@@ -22,11 +21,11 @@
 }
 
 .hero__burger-img {
-  position: relative;
+  position: absolute;
+  top: 5rem;
+  left: -3.5rem;
   &2 {
-    position: absolute;
-    top: -6rem;
-    left: 2rem;
+    position: relative;
   }
 }
 
@@ -35,6 +34,7 @@
   flex-direction: column;
   justify-content: center;
   padding-top: 7rem;
+  margin-left: 1rem;
 }
 
 .hero__content-desc {
@@ -43,8 +43,16 @@
   color: $white;
 }
 
-.arrow-down {
-  background: url('../img/arrow-scroll.png');
+.arrow__down {
   position: absolute;
-  bottom: 110px;
+  bottom: 4rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.arrow__down-link {
+  background: url('../img/arrow-scroll.png') center center / cover no-repeat;
+  display: block;
+  height: 1.7rem;
+  width: 3.3rem;
 }

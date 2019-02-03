@@ -3,12 +3,14 @@
 .title {
   font-size: 7.2rem;
   font-family: $gagalin;
-  line-height: 1.1;
-  margin-bottom: 5.7rem;
-  &-hero {
+  &_mb_47 {
+    margin-bottom: 4.7rem;
+  }
+  &_color_orange {
     color: $orange;
   }
-  &-best {
+  &_color_black {
     color: $black;
   }
 }
+
