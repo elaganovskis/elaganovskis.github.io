@@ -1,0 +1,92 @@
+.team {
+  background: url('../img/bg/bg-team.png') center center / cover no-repeat;
+  position: relative;
+}
+
+.team__side {
+  background-color: rgba(58, 50, 50, 0.9);
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.team__item .member__info {
+  display: none;
+}
+
+.team__item {
+  margin-bottom: 4rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.team__members {
+  width: 35rem;
+}
+
+.member {
+  font-size: 1.4rem;
+  font-family: $gagalin;
+  margin-bottom: 1.8rem;
+  color: $white;
+  display: flex;
+  align-items: center;
+}
+
+.member::before {
+  content: '';
+  background: url(../img/icons/team-arrow.svg);
+  width: 10px;
+  height: 7px;
+  display: block;
+  margin-right: 1rem;
+}
+
+.team__item_active>.member::before {
+  transform: rotate(180deg);
+}
+
+.team__item_active>.member {
+  color: $orange;
+}
+
+.team__item_active>.member__info {
+  display: flex;
+}
+
+.member__info {
+  display: flex;
+}
+
+.member__img {
+  display: block;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+
+.member__speciality {
+  margin-left: 2rem;
+}
+
+.member__title {
+  font-size: 1.4rem;
+  font-family: $ubuntu;
+  color: $white;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.member__offer {
+  font-size: 1.4rem;
+  font-family: $ubuntu;
+  color: $white;
+  font-weight: 300;
+}
