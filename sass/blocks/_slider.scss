@@ -1,0 +1,71 @@
+.slider {
+  background: url('../img/bg/bg-menu.png') center center / cover no-repeat;
+  position: relative;
+}
+
+.slider .title {
+  position: absolute;
+  top: 11rem;
+  left: 9rem;
+}
+
+.slider__side {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.choice {
+  position: relative;
+  display: flex;
+}
+
+.choice__back {
+  width: 8rem;
+  height: 100%;
+  position: relative;
+}
+
+.choice_active .choice__name {
+  color: $orange;
+}
+
+.choice_active .choice__desc {
+  display: block;
+}
+
+.choice__back::before {
+  content: '';
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.choice__name {
+  transform: rotate(270deg);
+  position: absolute;
+  font-size: 4rem;
+  font-family: $gagalin;
+  color: $white;
+  bottom: 4rem;
+}
+
+.choice__desc {
+  display: none;
+  background-color: rgba(60, 59, 67, 0.9);
+  width: 54rem;
+  padding: 4rem 3rem;
+}
+
+.choice__desc-p {
+  color: $white;
+  font-family: $ubuntu;
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
