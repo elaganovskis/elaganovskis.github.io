@@ -1,0 +1,16 @@
+.form {
+  background: url('../img/bg/bg-order-main.png') center center / cover no-repeat;
+  position: relative;
+  display: block;
+}
+
+.form::after {
+  content: '';
+  position: absolute;
+  background: url('../img/bg/bg-order-over.png') center center / cover no-repeat;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
