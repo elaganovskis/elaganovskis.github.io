@@ -23,7 +23,7 @@
 }
 
 .form__col {
-  width: 50%;
+  flex: 1;
   margin-left: 20px;
   &:first-child {
     margin-left: 0;
@@ -62,7 +62,6 @@
 
 .form__block-input_text {
   min-height: 13rem;
-  min-width: 45rem;
 }
 
 .form__row_rbtn,
@@ -100,7 +99,7 @@
 .radio-button {
   position: absolute;
   top: 0;
-  right: 999px;
+  right: -999px;
 }
 
 .radio-button__circle {
@@ -131,7 +130,7 @@
 .checkbox {
   position: absolute;
   top: 0;
-  right: 999px;
+  left: -999px;
 }
 
 .checkbox__square {

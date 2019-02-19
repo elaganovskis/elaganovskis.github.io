@@ -51,7 +51,9 @@
 
           <header class="header">
             <div class="logo">
-              <img src="./img/icons/logo.svg" alt="Burger Logo" class="logo__img">
+              <svg class="logo__img">
+                <use xlink:href="./img/sprite.svg#logo"></use>
+              </svg>
             </div>
             <div class="header__buttons">
               <nav class="menu">
@@ -104,23 +106,26 @@
               <img src="./img/icons/meat.svg" alt="Meat Image" class="best__image">
               <div class="best__desc">
                 <div class="best__desc-title">100% свежое мясо</div>
-                <div class="best__desc-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias beatae maxime eum. Fugit, vero! Perferendis praesentium repellat illo exercitationem vero.</div>
+                <div class="best__desc-content">Драма представляет собой деструктивный цикл. Анапест представляет
+                собой анапест. Ямб неравномерен.</div>
               </div>
             </li>
             <li class="best__item">
               <img src="./img/icons/hand.svg" alt="Meat Image" class="best__image">
               <div class="best__desc">
-                <div class="best__desc-title">100% свежое мясо</div>
-                <div class="best__desc-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias beatae maxime
-                  eum. Fugit, vero! Perferendis praesentium repellat illo exercitationem vero.</div>
+                <div class="best__desc-title">Ручная сборка</div>
+                <div class="best__desc-content">Драма представляет собой деструктивный цикл. Анапест представляет
+                собой анапест. Первое полустишие притягивает сюжетный реформаторский
+                пафос.</div>
               </div>
             </li>
             <li class="best__item">
               <img src="./img/icons/natural.svg" alt="Meat Image" class="best__image best__image_last">
               <div class="best__desc">
-                <div class="best__desc-title">100% свежое мясо</div>
-                <div class="best__desc-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias beatae maxime
-                  eum. Fugit, vero! Perferendis praesentium repellat illo exercitationem vero.</div>
+                <div class="best__desc-title">Натуральные
+                ингредиенты</div>
+                <div class="best__desc-content">Драма представляет собой деструктивный цикл. Анапест представляет
+                собой анапест.</div>
               </div>
             </li>
           </ul>
@@ -143,7 +148,7 @@
                   </div>
                 </li>
                 <li class="team__item team__item_active">
-                  <div class="member">Дениел Редклиф</div>
+                  <div class="member">Ричард Джеймс</div>
                   <div class="member__info">
                     <img src="./img/team-member.png" alt="" class="member__img">
                     <div class="member__speciality">
@@ -163,7 +168,7 @@
                   </div>
                 </li>
                 <li class="team__item">
-                  <div class="member">Дениел Редклиф</div>
+                  <div class="member">Николай Иванов</div>
                   <div class="member__info">
                     <img src="./img/team-member.png" alt="" class="member__img">
                     <div class="member__speciality">
@@ -306,12 +311,18 @@
         </ul>
       </section>
 
+      <section class="section section__centered work">
+        <div class="container">
+          <div class="title title_mb_20 title_color_black">Как мы работаем</div>
+        </div>
+      </section>
+
       <section class="section section__centered order__section">
         <div class="container order__container">
           <div class="title title_mb_20 title_color_orange">Закажите Доставку</div>
           <form action="" class="form">
             <div class="form__content">
-              <div class="form_col">
+              <div class="form__col">
                 <div class="form__row">
                   <label for="" class="form__block">
                     <div class="form__block-title">Имя</div>
@@ -373,7 +384,7 @@
                     <span class="checkbox__text">Не перезванивать</span>
                   </label>
                 </div>
-                <div class="form__row form__row_column form__row_btns">
+                <div class="form__row form__row_btns">
                   <a href="#" class="btn btn_red form__btn_link"><button class="form__btn">Заказать</button></a>
                   <a href="#" class="btn form__btn_link"><button class="form__btn">Очистить</button></a>
                 </div>
