@@ -1,8 +1,8 @@
-.btn {
+.btn,
+.form__btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $red;
   border-radius: 5px;
   text-transform: uppercase;
   color: $white;
@@ -12,4 +12,11 @@
   &_black {
     background: $black;
   }
+  &_red {
+    background: $red;
+  }
+}
+
+.form__btn:last-child {
+  text-transform: none;
 }

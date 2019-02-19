@@ -79,7 +79,7 @@
                   </li>
                 </ul>
               </nav>
-              <a href="#" class="btn header__btn">Заказать</a>
+              <a href="#" class="btn header__btn btn_red">Заказать</a>
             </div>
           </header>
 
@@ -306,8 +306,81 @@
         </ul>
       </section>
 
-      <section class="section form">
-        
+      <section class="section section__centered order__section">
+        <div class="container order__container">
+          <div class="title title_mb_20 title_color_orange">Закажите Доставку</div>
+          <form action="" class="form">
+            <div class="form__content">
+              <div class="form_col">
+                <div class="form__row">
+                  <label for="" class="form__block">
+                    <div class="form__block-title">Имя</div>
+                    <input type="text" class="form__block-input">
+                  </label>
+                  <label for="" class="form__block">
+                    <div class="form__block-title">Телефон</div>
+                    <input type="text" class="form__block-input">
+                  </label>
+                </div>
+                <div class="form__row">
+                  <label for="" class="form__block">
+                    <div class="form__block-title">Улица</div>
+                    <input type="text" class="form__block-input">
+                  </label>
+                </div>
+                <div class="form__row">
+                  <label for="" class="form__block">
+                    <div class="form__block-title">Дом</div>
+                    <input type="text" class="form__block-input">
+                  </label>
+                  <label for="" class="form__block">
+                    <div class="form__block-title">Корпус</div>
+                    <input type="text" class="form__block-input">
+                  </label>
+                  <label for="" class="form__block">
+                    <div class="form__block-title">Квартира</div>
+                    <input type="text" class="form__block-input">
+                  </label>
+                  <label for="" class="form__block">
+                    <div class="form__block-title">Этаж</div>
+                    <input type="text" class="form__block-input">
+                  </label>
+                </div>
+              </div>
+              <div class="form__col">
+                <div class="form__row form__row_column">
+                  <label for="comment" class="form__block-title">Комментарий</label>
+                  <textarea id="comment" name="comment" class="form__block-input form__block-input_text"></textarea>
+                </div>
+                <div class="form__row">
+                  <div class="form__row_rbtn">
+                    <label for="cash" class="radio-button__label">
+                      <input type="radio" name="radio-button" id="cash" value="cash" class="radio-button" checked>
+                      <span class="radio-button__circle"></span>
+                      <span class="radio-button__text">Потребуется сдача</span>
+                    </label>
+                    <label for="card" class="radio-button__label">
+                      <input type="radio" id="card" name="radio-button" value="card" class="radio-button">
+                      <span class="radio-button__circle"></span>
+                      <span class="radio-button__text">Оплата по карте</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form__row">
+                  <label for="call" class="checkbox__label">
+                    <input type="checkbox" id="call" name="" value="call" class="checkbox" checked>
+                    <span class="checkbox__square"></span>
+                    <span class="checkbox__text">Не перезванивать</span>
+                  </label>
+                </div>
+                <div class="form__row form__row_column form__row_btns">
+                  <a href="#" class="btn btn_red form__btn_link"><button class="form__btn">Заказать</button></a>
+                  <a href="#" class="btn form__btn_link"><button class="form__btn">Очистить</button></a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
       </section>
 
       <section class="section map">

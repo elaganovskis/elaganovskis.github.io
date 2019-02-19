@@ -12,6 +12,9 @@
   border-radius: 50%;
   position: relative;
   cursor: pointer;
+  &:hover {
+    border: 1px $white solid;
+  }
   &_active {
     border: 1px $white solid;
   }

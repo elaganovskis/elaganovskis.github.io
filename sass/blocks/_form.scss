@@ -1,10 +1,11 @@
-.form {
+.order__section {
   background: url('../img/bg/bg-order-main.png') center center / cover no-repeat;
   position: relative;
   display: block;
+  z-index: -10;
 }
 
-.form::after {
+.order__section::after {
   content: '';
   position: absolute;
   background: url('../img/bg/bg-order-over.png') center center / cover no-repeat;
@@ -12,5 +13,150 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: -5;
+}
+
+.form__content {
+  display: flex;
+  color: $white;
+  font-size: 1.4rem;
+}
+
+.form__col {
+  width: 50%;
+  margin-left: 20px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.form__row {
+  display: flex;
+  width: 100%;
+  margin-bottom: 2rem;
+  &_column {
+    flex-direction: column;
+  }
+}
+
+.form__block {
+  width: 100%;
+  flex: 1;
+  margin-left: 20px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.form__block-title {
+  margin-bottom: 1rem;
+}
+
+.form__block-input {
+  background: $white;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  padding: 12px 25px;
+}
+
+.form__block-input_text {
+  min-height: 13rem;
+  min-width: 45rem;
+}
+
+.form__row_rbtn,
+.form__row_btns {
+  display: flex;
+  flex-direction: row;
+}
+
+.form__btn {
+  background: transparent;
+  border: none;
+  color: $white;
+}
+
+.checkbox__label {
+  display: flex;
+  align-items: center;
+}
+
+.form__radio-text,
+.radio-button__text,
+.checkbox__text {
+  margin-left: 1rem;
+}
+
+.radio-button__label {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.radio-button {
+  position: absolute;
+  top: 0;
+  right: 999px;
+}
+
+.radio-button__circle {
+  display: block;
+  border: 1px solid $white;
+  background: white;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::after {
+    content: '';
+    background: $orange;
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+}
+
+.radio-button:checked+.radio-button__circle::after {
+  width: 8px;
+  height: 8px;
+}
+
+.checkbox {
+  position: absolute;
+  top: 0;
+  right: 999px;
+}
+
+.checkbox__square {
+  display: block;
+  border: 1px solid $white;
+  background: white;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &::after {
+    content: '';
+    background: $orange;
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+}
+
+.checkbox:checked+.checkbox__square::after {
+  content: url('../img/checkbox.png');
+  position: absolute;
+  top: -3px;
+  left: 2px;
 }
