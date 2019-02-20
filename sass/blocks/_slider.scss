@@ -54,6 +54,9 @@
   font-family: $gagalin;
   color: $white;
   bottom: 4rem;
+  white-space: nowrap;
+  width: 100%;
+  cursor: pointer;
 }
 
 .choice__desc {

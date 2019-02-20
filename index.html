@@ -87,7 +87,9 @@
 
           <div class="hero__content">
             <div class="hero__content-img">
-              <img src="./img/icons/drops.svg" alt="Burger Image" class="hero__burger-img">
+              <svg class="hero__burger-img">
+                <use xlink:href="./img/sprite.svg#drops"></use>
+              </svg>
               <img src="./img/hero_burger.png" alt="Burger Image" class="hero__burger-img2">
             </div>
             <div class="hero__content-text">
@@ -103,7 +105,9 @@
           <div class="title title_color_black title_mb_47">Мы лучшие</div>
           <ul class="best__list">
             <li class="best__item">
-              <img src="./img/icons/meat.svg" alt="Meat Image" class="best__image">
+              <svg class="best__image best__image_meat">
+                <use xlink:href="./img/sprite.svg#meat"></use>
+              </svg>
               <div class="best__desc">
                 <div class="best__desc-title">100% свежое мясо</div>
                 <div class="best__desc-content">Драма представляет собой деструктивный цикл. Анапест представляет
@@ -111,7 +115,9 @@
               </div>
             </li>
             <li class="best__item">
-              <img src="./img/icons/hand.svg" alt="Meat Image" class="best__image">
+              <svg class="best__image best__image_hand">
+                <use xlink:href="./img/sprite.svg#hand"></use>
+              </svg>
               <div class="best__desc">
                 <div class="best__desc-title">Ручная сборка</div>
                 <div class="best__desc-content">Драма представляет собой деструктивный цикл. Анапест представляет
@@ -120,7 +126,9 @@
               </div>
             </li>
             <li class="best__item">
-              <img src="./img/icons/natural.svg" alt="Meat Image" class="best__image best__image_last">
+              <svg class="best__image best__image_natural best__image_last">
+                <use xlink:href="./img/sprite.svg#natural"></use>
+              </svg>
               <div class="best__desc">
                 <div class="best__desc-title">Натуральные
                 ингредиенты</div>
@@ -386,7 +394,7 @@
                 </div>
                 <div class="form__row form__row_btns">
                   <a href="#" class="btn btn_red form__btn_link"><button class="form__btn">Заказать</button></a>
-                  <a href="#" class="btn form__btn_link"><button class="form__btn">Очистить</button></a>
+                  <a href="#" class="btn form__btn_link"><button type="reset" class="form__btn form__btn_lc">Очистить</button></a>
                 </div>
               </div>
             </div>
@@ -400,21 +408,48 @@
             <div class="footer__content">
               <div class="contacts">
                 <div class="contacts__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
-                <a href="tel:78123771377" class="contacts__phone">+7 (812) 377-13-77</a>
+                <a href="tel:78123771377" class="contacts__phone">
+                  <div class="contacts__phone-img">
+                    <svg class="contacts__phone-icon">
+                      <use xlink:href="./img/sprite.svg#phone"></use>
+                    </svg>
+                  </div>
+                  <div class="contacts__phone-text">+7 (812) 377-13-77</div>
+                </a>
               </div>
               <div class="socials">
                 <ul class="socials__list">
                   <li class="socials__item">
-                    <a href="#" class="socials__link socials__link_vk"></a>
+                    <a href="#" class="socials__link">
+                      <span class="socials__hidden">ВКонтакте</span>
+                      <svg class="socials__icon socials__icon_vk">
+                        <use xlink:href="./img/sprite.svg#vk"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="socials__item">
-                    <a href="#" class="socials__link socials__link_fb"></a>
+                    <a href="#" class="socials__link">
+                      <span class="socials__hidden">Facebook</span>
+                      <svg class="socials__icon socials__icon_fb">
+                        <use xlink:href="./img/sprite.svg#fb"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="socials__item">
-                    <a href="#" class="socials__link socials__link_ig"></a>
+                    <a href="#" class="socials__link">
+                      <span class="socials__hidden">Инстаграм</span>
+                      <svg class="socials__icon socials__icon_inst">
+                        <use xlink:href="./img/sprite.svg#inst"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="socials__item">
-                    <a href="#" class="socials__link socials__link_twitter"></a>
+                    <a href="#" class="socials__link socials__link_twitter">
+                      <span class="socials__hidden">Twitter</span>
+                      <svg class="socials__icon socials__icon_twitter">
+                        <use xlink:href="./img/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>

@@ -2,7 +2,6 @@
   background: url('../img/bg/bg-order-main.png') center center / cover no-repeat;
   position: relative;
   display: block;
-  z-index: -10;
 }
 
 .order__section::after {
@@ -54,10 +53,15 @@
 
 .form__block-input {
   background: $white;
-  border-radius: 5px;
+  border-radius: 3px;
   border: none;
   width: 100%;
   padding: 12px 25px;
+  font-size: 1.4rem;
+  font-family: $ubuntu;
+  &:focus {
+    outline-color: $orange;
+  }
 }
 
 .form__block-input_text {
@@ -74,6 +78,7 @@
   background: transparent;
   border: none;
   color: $white;
+  cursor: pointer;
 }
 
 .checkbox__label {
@@ -91,6 +96,7 @@
   margin-left: 2rem;
   display: flex;
   align-items: center;
+  position: relative;
   &:first-child {
     margin-left: 0;
   }
@@ -99,7 +105,7 @@
 .radio-button {
   position: absolute;
   top: 0;
-  right: -999px;
+  left: -999px;
 }
 
 .radio-button__circle {

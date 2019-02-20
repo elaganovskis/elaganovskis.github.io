@@ -19,6 +19,13 @@
   justify-content: space-between;
 }
 
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+}
+
 .contacts__address {
   font-size: 1.4rem;
   font-family: $ubuntu;
@@ -29,16 +36,20 @@
 .contacts__phone {
   font-size: 1.4rem;
   font-family: $ubuntu;
-  width: 100%;
   color: $red;
   font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.contacts__phone-img {
   display: flex;
   align-items: center;
 }
 
-.contacts__phone::before {
-  content: '';
-  background: url('../img/contact-phone.png') no-repeat;
+.contacts__phone-icon {
   height: 1.2rem;
   width: 1.2rem;
   margin-right: 1rem;
@@ -56,33 +67,41 @@
 }
 
 .socials__item {
-  width: 2rem;
-  height: 2rem;
   &:not(:last-child) {
     margin-right: 2rem;
   }
 }
 
 .socials__link {
-  display: block;
-  width: auto;
-  height: 100%;
-  background: contain;
-  filter: grayscale(100%);
+  display: flex;
 }
 
-.socials__link_vk {
-  background: url('../img/icons/vk.svg');
+.socials__icon {
+  fill: $white;
+  fill-opacity: 0.3;
+  transition: fill-opacity 0.2s;
+  &_vk {
+    width: 2.5rem;
+    height: 1.4rem;
+  }
+  &_fb {
+    width: 2rem;
+    height: 2rem;
+  }
+  &_inst {
+    width: 2rem;
+    height: 2rem;
+  }
+  &_twitter {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
-.socials__link_fb {
-  background: url('../img/icons/fb.svg');
+.socials__item:hover .socials__icon {
+  fill-opacity: 1;
 }
 
-.socials__link_ig {
-  background: url('../img/icons/inst.svg');
-}
-
-.socials__link_twitter {
-  background: url('../img/icons/twitter.svg');
+.socials__hidden {
+  display: none;
 }
