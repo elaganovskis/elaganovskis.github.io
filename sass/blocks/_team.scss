@@ -33,6 +33,9 @@
     display: flex;
     flex-direction: column;
   }
+  @include phones() {
+    margin-bottom: 3rem;
+  }
 }
 
 .team__members {
@@ -109,6 +112,9 @@
   color: $white;
   font-weight: bold;
   margin-bottom: 2rem;
+  @include phones() {
+    font-size: 1.8rem;
+  }
 }
 
 .member__offer {

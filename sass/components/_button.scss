@@ -21,3 +21,19 @@
 .form__btn_lc {
   text-transform: none;
 }
+
+.btn_reviews {
+  &::after {
+    content: 'ПОДРОБНЕЕ';
+  }
+  @include phones() {
+    font-size: 1.7rem;
+    height: 4rem;
+    padding: 1rem 1.4rem;
+    width: 17rem;
+    &::after {
+      content: 'ЧИТАТЬ ОТЗЫВ';
+      white-space: nowrap;
+    }
+  }
+}

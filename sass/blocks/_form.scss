@@ -48,6 +48,20 @@
   }
 }
 
+.form__row_mobile {
+  @include phones() {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3.5rem;
+  }
+}
+
+.form__row_mb {
+  @include phones() {
+    margin-bottom: 3rem;
+  }
+} 
+
 .form__block {
   width: 100%;
   flex: 1;
@@ -180,5 +194,8 @@
   left: 2px;
   @include tablets() {
     top: 0;
+  }
+  @include phones() {
+    top: 1px;
   }
 }

@@ -27,6 +27,9 @@
   width: 8rem;
   height: 100%;
   position: relative;
+  @include phones() {
+    max-width: 11rem;
+  }
 }
 
 .choice_active .choice__name {
@@ -62,7 +65,7 @@
 .choice__desc {
   display: none;
   background-color: rgba(60, 59, 67, 0.9);
-  width: 54rem;
+  max-width: 54rem;
   padding: 4rem 3rem;
 }
 

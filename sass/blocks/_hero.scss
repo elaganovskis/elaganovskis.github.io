@@ -24,12 +24,18 @@
     align-items: center; // flex: 0.9;
     width: 50%;
   }
+  @include phones() {
+    padding-top: 4rem;
+  }
 }
 
 .hero__content-img {
   position: relative;
   @include tablets() {
     margin-bottom: 10rem;
+  }
+  @include phones() {
+    margin-bottom: 5rem;
   }
 }
 
@@ -73,6 +79,9 @@
   @include tablets() {
     font-size: 7.2rem;
     text-align: center;
+  }
+  @include phones() {
+    font-size: 6rem;
   }
 }
 
