@@ -25,6 +25,10 @@
       opacity: 1;
     }
   }
+  @include tablets() {
+    height: 25%;
+    width: 50%;
+  }
 }
 
 .reviews__item-hover {
@@ -39,6 +43,14 @@
 
   opacity: 0;
   transition: opacity 0.3s;
+
+  @include tablets() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 6rem 2rem 6rem;
+  }
 }
 
 .reviews {
@@ -47,12 +59,17 @@
     font-family: $gagalin;
     line-height: 2;
     margin-bottom: 3rem;
+    @include tablets() {
+      margin-bottom: 2rem;
+    }
   }
   &__text {
     font-size: 1.4rem;
     font-family: $ubuntu;
     line-height: 1.7;
     margin-bottom: 3rem;
+    overflow: hidden;
+    max-height: 60%;
   }
 }
 

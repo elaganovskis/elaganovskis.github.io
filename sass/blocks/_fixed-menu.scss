@@ -2,6 +2,9 @@
   position: fixed;
   top: 9rem;
   right: 5rem;
+  @include tablets() {
+    display: none;
+  }
 }
 
 .fixed-menu__item {

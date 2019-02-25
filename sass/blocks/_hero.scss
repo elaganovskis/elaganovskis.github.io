@@ -9,15 +9,36 @@
   position: relative;
 }
 
+.hero__container .hero__content {
+  align-self: center;
+}
+
 .hero__content {
   display: flex;
   align-items: center;
   justify-content: center;
   flex: 0.7;
+  @include tablets() {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; // flex: 0.9;
+    width: 50%;
+  }
 }
 
 .hero__content-img {
   position: relative;
+  @include tablets() {
+    margin-bottom: 10rem;
+  }
+}
+
+.hero__burger-img2 {
+  position: relative;
+  @include tablets() {
+    height: 33rem;
+    width: 37rem;
+  }
 }
 
 .hero__burger-img {
@@ -26,8 +47,11 @@
   height: 25rem;
   top: 5rem;
   left: -2rem;
-  &2 {
-    position: relative;
+  @include tablets() {
+    width: 46rem;
+    height: 20rem;
+    top: 3rem;
+    left: -6rem;
   }
 }
 
@@ -37,12 +61,19 @@
   justify-content: center;
   padding-top: 7rem;
   margin-left: 1rem;
+  @include tablets() {
+    align-items: center;
+  }
 }
 
 .hero__content-desc {
   font-size: 5.5rem;
   font-family: $lifehack;
   color: $white;
+  @include tablets() {
+    font-size: 7.2rem;
+    text-align: center;
+  }
 }
 
 .arrow__down {
@@ -52,8 +83,7 @@
   transform: translate(-50%, 0);
 }
 
-.arrow__down-link {
-  background: url('../img/arrow-scroll.png') center center / cover no-repeat;
+.arrow__down-img {
   display: block;
   height: 1.7rem;
   width: 3.3rem;

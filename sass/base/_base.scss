@@ -1,4 +1,5 @@
 @import '../../fonts/fonts.css';
+@import './media';
 *,
 *:after,
 *:before {
@@ -9,6 +10,12 @@
 
 html {
   font-size: 62.5%;
+  @include tablets() {
+    font-size: 50%;
+  }
+  @include phones() {
+    font-size: 43.75%;
+  }
 }
 
 html,
@@ -57,11 +64,13 @@ a {
   overflow: hidden;
   min-height: 100%;
   width: 100%;
-  min-width: 94rem;
+  // min-width: 94rem;
 }
 
 .container {
-  width: 94rem;
+  // width: 94rem;
+  max-width: 94rem;
+  width: 95%;
   margin: 0 auto;
 }
 

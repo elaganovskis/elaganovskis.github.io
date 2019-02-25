@@ -5,9 +5,20 @@
   padding-top: 1.2rem;
 }
 
+.logo__img {
+  width: 9rem;
+  height: 7rem;
+}
+
 .header__buttons {
   display: flex;
   align-items: center;
+}
+
+.menu {
+  @include tablets() {
+    display: none;
+  }
 }
 
 .menu__list {
@@ -41,9 +52,27 @@
 
 .header__btn {
   margin-left: 1.5rem;
+  @include tablets() {
+    display: none;
+  }
 }
 
-.logo__img {
-  width: 9rem;
-  height: 7rem;
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.8rem;
+}
+
+.hamburger-line {
+  width: 2rem;
+  height: 0.3rem;
+  background: #fff;
+  border-radius: 2px;
+  &:not(:last-child) {
+    margin-bottom: 0.4rem;
+  }
+  display: none;
+  @include tablets() {
+    display: flex;
+  }
 }

@@ -18,14 +18,15 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  flex: 1;
 }
 
 .best__item {
-  width: 28rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  flex: 1;
   margin-left: 4rem;
   &:first-child {
     margin-left: 0;
