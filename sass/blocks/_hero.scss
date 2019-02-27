@@ -26,6 +26,7 @@
   }
   @include phones() {
     padding-top: 4rem;
+    flex: 0.6;
   }
 }
 

@@ -16,6 +16,9 @@
   height: 100%;
   display: flex;
   justify-content: flex-end;
+  @include phones() {
+    width: 100%;
+  }
 }
 
 .choice {
@@ -28,7 +31,7 @@
   height: 100%;
   position: relative;
   @include phones() {
-    max-width: 11rem;
+    min-width: 8rem;
   }
 }
 
@@ -67,6 +70,13 @@
   background-color: rgba(60, 59, 67, 0.9);
   max-width: 54rem;
   padding: 4rem 3rem;
+  position: relative;
+  @include tablets() {
+    width: 100%;
+  }
+  @include phones() {
+    padding: 6rem 3rem;
+  }
 }
 
 .choice__desc-p {
@@ -74,4 +84,30 @@
   font-family: $ubuntu;
   font-size: 1.4rem;
   line-height: 1.7;
+}
+
+.choice__close {
+  color: rgba(255, 255, 255, 0.801);
+  font-family: "ubuntu", sans-serif;
+  font-size: 5rem;
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+  line-height: 0;
+  display: none;
+  cursor: pointer;
+  @include phones() {
+    display: block;
+  }
+}
+
+.choice_active {
+  @include phones() {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
 }
