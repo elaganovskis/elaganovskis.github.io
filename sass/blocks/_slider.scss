@@ -89,14 +89,17 @@
 .choice__close {
   color: rgba(255, 255, 255, 0.801);
   font-family: "ubuntu", sans-serif;
-  font-size: 5rem;
+  font-size: 4rem;
   position: absolute;
-  top: 3rem;
+  top: 2rem;
   right: 2rem;
   line-height: 0;
   display: none;
   cursor: pointer;
-  @include phones() {
+}
+
+.choice__close {
+  @include tablets() {
     display: block;
   }
 }

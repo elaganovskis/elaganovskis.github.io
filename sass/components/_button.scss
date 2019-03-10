@@ -37,3 +37,10 @@
     }
   }
 }
+
+.header__btn {
+  margin-left: 1.5rem;
+  @include tablets() {
+    display: none;
+  }
+}

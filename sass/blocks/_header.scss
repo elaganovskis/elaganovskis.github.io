@@ -5,6 +5,44 @@
   padding-top: 1.2rem;
 }
 
+.header-active {
+  @include tablets() {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    background-color: rgba(47, 50, 52, 0.99);
+    z-index: 10;
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .hamburger-menu-link {
+      @include tablets() {
+        display: none;
+      }
+    }
+    .logo {
+      @include tablets() {
+        display: none;
+      }
+    }
+    .menu__item::before,
+    .menu__link {
+      @include tablets() {
+        margin-bottom: 2rem;
+      }
+    }
+    .menu__link {
+      @include tablets() {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
 .logo__img {
   width: 9rem;
   height: 7rem;
@@ -21,9 +59,28 @@
   }
 }
 
+.header-active {
+  .menu {
+    @include tablets() {
+      display: block;
+    }
+  }
+  .menu__item {
+    @include tablets() {
+      flex-direction: column;
+    }
+  }
+}
+
 .menu__list {
   display: flex;
   align-items: center;
+}
+
+.header-active .menu__list {
+  @include tablets() {
+    flex-direction: column;
+  }
 }
 
 .menu__item {
@@ -35,8 +92,8 @@
   &::before {
     content: '';
     margin: 0 1rem;
-    width: 0.6rem;
-    height: 0.6rem;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     background: $white;
     display: inline-block;
@@ -50,13 +107,6 @@
   text-transform: uppercase;
 }
 
-.header__btn {
-  margin-left: 1.5rem;
-  @include tablets() {
-    display: none;
-  }
-}
-
 .hamburger {
   display: flex;
   flex-direction: column;
@@ -64,8 +114,8 @@
 }
 
 .hamburger-line {
-  width: 2rem;
-  height: 0.3rem;
+  width: 15px;
+  height: 2px;
   background: #fff;
   border-radius: 2px;
   &:not(:last-child) {
@@ -74,5 +124,25 @@
   display: none;
   @include tablets() {
     display: flex;
+  }
+}
+
+.hamburger__close {
+  color: rgba(255, 255, 255, 0.801);
+  font-family: "ubuntu", sans-serif;
+  font-size: 5rem;
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  line-height: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.header-active {
+  .hamburger__close {
+    @include tablets() {
+      display: block;
+    }
   }
 }
