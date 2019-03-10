@@ -12,38 +12,35 @@
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">
       <li class="fixed-menu__item  fixed-menu__item_active">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#hero" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#best" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#burgers" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#team" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#slider" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#reviews" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#work" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
-      </li>
-      <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#map" class="fixed-menu__link"></a>
       </li>
     </ul>
   </nav>
   <div class="wrapper">
     <div class="maincontent">
       
-      <section class="section hero">
+      <section class="section hero" id="hero">
         <div class="container hero__container">
 
           <div class="arrow__down">
@@ -65,29 +62,29 @@
               <nav class="menu">
                 <ul class="menu__list">
                   <li class="menu__item">
-                    <a href="#" class="menu__link">О нас</a>
+                    <a href="#best" class="menu__link">О нас</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#" class="menu__link">Бургеры</a>
+                    <a href="#burgers" class="menu__link">Бургеры</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#" class="menu__link">Команда</a>
+                    <a href="#team" class="menu__link">Команда</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#" class="menu__link">Меню</a>
+                    <a href="#slider" class="menu__link">Меню</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#" class="menu__link">Отзывы</a>
+                    <a href="#reviews" class="menu__link">Отзывы</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#" class="menu__link">Как мы работаем</a>
+                    <a href="#work" class="menu__link">Как мы работаем</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#" class="menu__link">Контакты</a>
+                    <a href="#map" class="menu__link">Контакты</a>
                   </li>
                 </ul>
               </nav>
-              <a href="#" class="btn header__btn btn_red">Заказать</a>
+              <a href="#order" class="btn header__btn btn_red">Заказать</a>
               <a href="#" class="hamburger-menu-link">
                 <div class="hamburger">
                   <div class="hamburger-line"></div>
@@ -113,7 +110,7 @@
         </div>
       </section>
 
-      <section class="section best">
+      <section class="section best" id="best">
         <div class="container best__container">
           <div class="title title_color_black title_mb_47">Мы лучшие</div>
           <ul class="best__list">
@@ -159,21 +156,90 @@
         </div>
       </section>
 
-      <section class="section burgers">
-        <div class="container burgers__container">
+      <section class="section section__centered burgers" id="burgers">
+        <div class="burgers__container">
           <div class="burgers__slider">
-            <a href="" class="burger-slider__arrow_left"></a>
-            <ul class="burger__slider-list">
-              <li class="burger__slider-item">
-                
+
+            <a href="" class="slider__arrow slider__arrow_left">
+              <svg class="burger-slider__arrow_left slider__arrow-img">
+                <use xlink:href="./img/sprite.svg#arrow-scroll"></use>
+              </svg>
+            </a>
+
+            <ul class="burgers__slider-list">
+              <li class="burgers__slider-item">
+                <div class="slider__col">
+
+                  <div class="burger__ingredients">
+                    <div class="burger__ingredients-imgcont">
+                      <svg class="burger__ingredients-img">
+                        <use xlink:href="./img/sprite.svg#burger"></use>
+                      </svg>
+                    </div>
+                    <div class="burger__ingredients-title">Состав</div>
+                  </div>
+
+                  <div class="burger__ingredients-hover">
+                    <ul class="ingredients__list">
+                      <li class="ingredients__item">
+                        <div class="ingredients-icon">
+                          <svg class="ingredients-img">
+                            <use xlink:href="./img/sprite.svg#natural"></use>
+                          </svg>
+                        </div>
+                        <div class="ingredients-title">Говядина</div>
+                        <div class="ingredients-weight">300 г</div>
+                      </li>
+                      <li class="ingredients__item">
+                        <div class="ingredients-icon">
+                          <svg class="ingredients-img">
+                            <use xlink:href="./img/sprite.svg#natural"></use>
+                          </svg>
+                        </div>
+                        <div class="ingredients-title">Говядина</div>
+                        <div class="ingredients-weight">300 г</div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <img src="./img/burgers/burger-black.png" alt="Burger" class="burgers__slider-img">
+
+                  <div class="burger__kcal">
+                    <div class="burger__kcal-imgcont">
+                      <svg class="burger__kcal-img">
+                        <use xlink:href="./img/sprite.svg#kkal"></use>
+                      </svg>
+                    </div>
+                    <div class="burger__kcal-title">ккал</div>
+                  </div>
+
+                </div>
+                <div class="slider__col">
+                  <div class="burger__slider-content">
+                    <div class="title title_color_white slider-content__title" id="blad">dark beef burger</div>
+                    <div class="slider-content__text">Ваш старый добрый знакомый, с рубленым бифштексом из
+                    100% говядины, тремя кусочками нежнейшего сыра
+                    эмменталь, двумя помидорами, луком, салатом и соусом
+                    гриль теперь с добавлением экзотического соуса чураско.</div>
+                    <div class="slider-content__order">
+                      <div class="slider-content__price">500 <span class="slider-content__currency">рублей</span></div>
+                      <a href="#" class="btn btn_red btn__slider"><button class="form__btn">Заказать</button></a>
+                    </div>
+                  </div>
+                </div>
               </li>
             </ul>
-            <a href="" class="burger-slider__arrow_right"></a>
+            
+            <a href="" class="slider__arrow slider__arrow_right">
+              <svg class="burger-slider__arrow_right slider__arrow-img">
+                <use xlink:href="./img/sprite.svg#arrow-scroll"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </section>
 
-      <section class="section team">
+      <section class="section team" id="team">
           <div class="team__side">
             <div class="title title_mb_20 title_color_orange">Команда</div>
             <div class="team__members">
@@ -223,7 +289,7 @@
           </div>
       </section>
 
-      <section class="section slider">
+      <section class="section slider" id="slider">
         <div class="title title_color_white">Меню</div>
         <ul class="slider__side">
           <li class="choice choice_active">
@@ -268,7 +334,7 @@
         </ul>
       </section>
 
-      <section class="reviews section">
+      <section class="reviews section"  id="reviews">
         <ul class="reviews__list">
           <li class="reviews__item" style="background-image: url(./img/reviews/reviews-1.png);">
             <div class="reviews__item-hover">
@@ -364,13 +430,13 @@
         </ul>
       </section>
 
-      <section class="section section__centered work">
+      <section class="section section__centered work"  id="work">
         <div class="container">
           <div class="title title_mb_20 title_color_black">Как мы работаем</div>
         </div>
       </section>
 
-      <section class="section section__centered order__section">
+      <section class="section section__centered order__section" id="order">
         <div class="container order__container">
           <div class="title title_mb_20 title_color_orange">Закажите Доставку</div>
           <form action="" class="form">
@@ -447,7 +513,7 @@
         </div>
       </section>
 
-      <section class="section map">
+      <section class="section map" id="map">
         <footer class="footer">
           <div class="footer__container">
             <div class="footer__content">

@@ -1,0 +1,140 @@
+.burgers {
+  background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.burgers__container {
+  display: flex;
+  justify-content: center;
+}
+
+.burgers__slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.burgers__slider-item {
+  display: flex;
+  align-items: center;
+}
+
+.slider__col {
+  width: 45%;
+  min-height: 45rem;
+  &:not(:first-child) {
+    margin-left: 5rem;
+  }
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger__ingredients {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 9rem;
+  width: 9rem;
+  background-color: #f08c33;
+  border-radius: 5px;
+}
+
+.burger__ingredients-img {
+  height: 4rem;
+}
+
+.burger__ingredients-title {
+  font-size: 1.4rem;
+  font-family: $gagalin;
+  color: $white;
+}
+
+.burger__kcal {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 7rem;
+  width: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger__kcal-img {
+  height: 6.5rem;
+  fill: rgba(255, 255, 255, 0.502);
+}
+
+.burger__ingredients-hover {
+  display: none;
+}
+
+.burgers__slider-img {
+  width: 43rem;
+}
+
+.slider__arrow_left {
+  margin-right: 1rem;
+}
+
+.slider__arrow_right {
+  margin-left: 1rem;
+}
+
+.slider__arrow-img {
+  width: 3rem;
+}
+
+.burger-slider__arrow_left {
+  transform: rotate(90deg);
+}
+
+.burger-slider__arrow_right {
+  transform: rotate(-90deg);
+}
+
+.slider-content__title {
+  line-height: 1;
+  margin-bottom: 2.5rem;
+}
+
+.slider-content__order {
+  display: flex;
+  align-items: center;
+}
+
+.slider-content__text {
+  font-size: 1.4rem;
+  font-family: $ubuntu;
+  color: $white;
+  font-weight: lighter;
+  margin-bottom: 2rem;
+}
+
+.slider-content__price {
+  font-size: 7rem;
+  font-family: $gagalin;
+  color: $red;
+}
+
+.slider-content__currency {
+  font-size: 3.5rem;
+}
+
+.burger__kcal-title {
+  font-size: 1.4rem;
+  font-family: $gagalin;
+  color: rgba(255, 255, 255, 0.502);
+  line-height: 1;
+}
